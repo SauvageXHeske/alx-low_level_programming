@@ -1,29 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - main block
- * Description: prints all single digit numbers of base 10
- * starting from 0, followed by a new line.
- * Return: 0
+ * main -> assign a random number to the variable n each time it is executed
+ * and print the last digit of the number stored in the variable n
+ * Return: always 0
  */
 int main(void)
 {
-	char d = '0';
+	char ch;
+	int n;
 
-	while (d <= '9')
+	for (n = 48; n <= 57; n++)
 	{
-		putchar(d);
-		d++;
+		putchar(n);
+	}
+	for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
 	}
 
-	char c = 'a';
-
-	while (c <= 'f')
-	{
-		putchar(c);
-		c++;
-	}
-
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
