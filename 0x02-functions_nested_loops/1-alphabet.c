@@ -1,17 +1,12 @@
 #include "main.n"
 
 /**
- * print_alphabet - print alphabet
+ * main - check the code
  *
- * Return: void
+ * Return: Always 0
  */
-void print_alphabet(void)
+int main(void)
 {
-	int n;
-
-	for (n = 'a'; n <= 'z'; n++)
-	{
-		_putchar(n);
-	}
-	_putchar('\n');
+	print_alphabet();
+	return (0);
 }
